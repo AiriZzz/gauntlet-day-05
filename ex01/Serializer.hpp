@@ -5,6 +5,5 @@
 
 class Serializer {
 
-    public:
-        std::string serialize(const GameState& state)const;
+        std::string serialize(const GameState& state)const{};
 };
