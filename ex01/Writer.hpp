@@ -3,5 +3,6 @@
 
 class Writer {
 
-    void write(const std::string& path, const std::string& packed, const unsigned& sum){};
+    public:
+     void write(const std::string& path, const std::string& packed, const unsigned& sum);
 };

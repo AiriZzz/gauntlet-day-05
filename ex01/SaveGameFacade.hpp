@@ -10,11 +10,11 @@
 class SaveGameFacade {
 
     public:
-        void save(const GameState& state, const std::string& path){}
+        void save(const GameState& state, const std::string& path);
 
     private:
         Serializer m_serializer;
         Compressor m_compressor;
-        Checksum sum;
+        Checksum m_checksum;
         Writer m_writer;
 };

@@ -1,8 +1,9 @@
 #pragma once
-#include <string>
+#include <iostream>
 
 class Checksum{
 
-    unsigned of(const std::string& packed)const{}
+    public:
+     unsigned of(const std::string& packed);
 
 };

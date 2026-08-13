@@ -1,18 +1,15 @@
 #include "Checksum.hpp"
 
+unsigned Checksum::of(const std::string& packed){
 
-class Checksum::Checksum{
+    unsigned sum = 0; //no negative value
 
-    unsigned of(const std::string& packed)const{
-
-        unsigned int sum; //no negative value
-
-        for(char c : packed)
-        {
-            sum += static_cast<unsigned>(c);
-        }
-
-        return sum;
+    for(char c : packed)
+    {
+        sum += static_cast<unsigned>(c);
     }
 
-};
+    std::cout << "Checksum  -> "<< sum << "\n";
+
+    return sum;
+}

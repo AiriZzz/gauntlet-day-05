@@ -1,17 +1,12 @@
 #include "Writer.hpp"
 
-class Writer {
-
-    void Writer::write(const std::string& path, const std::string& packed, const unsigned& sum){
+void Writer::write(const std::string& path, const std::string& packed, const unsigned& sum){
 
 
-        std::ofstream saveFile(path);
+    std::ofstream saveFile(path);
 
-        saveFile << packed ;
-        saveFile << sum ;
-
-
-    };
+    saveFile << packed ;
+    saveFile << sum ;
 
 
 };

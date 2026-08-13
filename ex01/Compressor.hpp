@@ -1,11 +1,11 @@
 #pragma once
 #include "GameState.hpp"
-#include <string>
 #include <iostream>
+#include <vector>
 
 class Compressor{
 
     public:
-        std::string compress(const GameState& text)const{};
+        std::string compress(const std::string& text);
 
 };
