@@ -14,7 +14,7 @@ class Compressor {
         std::string hp =
         text.substr(hpStart);
         
-        std::cout << "compress -> " ;
+        std::cout << "compress -> " << level << ";" << hp ;
         return level + ";" + hp;
 
     }
